@@ -8,9 +8,41 @@
         }
         var API_key = 'd5d183f4af9a49ce932537205d8def6b';
         var fridge_data_response='{"compartments":[{"id":1,"size":1,"status":"occupied","content":'+getRandomInt(1,1000)+',"begin_pickup_time":"2022-02-04T09:14:00.000Z","end_pickup_time":"2022-02-04T18:14:00.000Z","unlock_code":"5476","customer":"Giesela Generik"},{"id":2,"size":3,"status":"vacant","content":'+getRandomInt(1,1000)+',"begin_pickup_time":"2022-02-04T10:00:00.000Z","end_pickup_time":"2022-02-04T12:00:00.000Z","unlock_code":"1234","customer":"Rüdiger Random"},{"id":1,"size":1,"status":"vacant","content":'+getRandomInt(1,1000)+',"begin_pickup_time":"2022-02-04T12:23:00.000Z","end_pickup_time":"2022-02-04T14:23:00.000Z","unlock_code":"7696","customer":"Max Mustermann"},{"id":4,"size":2,"status":"occupied","content":'+getRandomInt(1,1000)+',"begin_pickup_time":"2022-02-04T20:17:00.000Z","end_pickup_time":"2022-02-04T22:17:00.000Z","unlock_code":"5745","customer":"Anselm Austauschbar"},{"id":5,"size":1,"status":"vacant","content":'+getRandomInt(1,1000)+',"begin_pickup_time":"2022-02-04T19:56:00.000Z","end_pickup_time":"2022-02-04T20:56:00.000Z","unlock_code":"4743","customer":"Silke Seelenlos"}]}';
+        window.onload = function(){
+            document.getElementById('apikey').textContent = API_key;
+        }
     </script>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            font-size:clamp(3rem,15vw,9rem);
+        }
+        div{
+            font-size:clamp(1rem,8vw,2rem);
+            margin-top: 1em;
+        }
+        #apikey{
+            background-color: aqua;
+            border-radius: 5px;
+            padding:5px
+        }
+    </style>
+    </header>
 </header>
 <body>
-
+    <h1>
+        Good luck! Have fun!
+    </h1><br>
+    <div>
+    You will find the spoonacular API documentation <a href="https://spoonacular.com/food-api/docs">here</a>
+    </div>
+    <div>
+    Use the API-key <span id="apikey"></span>
+    </div>
+    <div>
+        Both the API-key and refrigerator dummy data are initialized as JS variables in this page's source code.
+    </div>
 </body>
 </html>
